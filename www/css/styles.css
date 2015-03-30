@@ -1,0 +1,260 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+  font-family: 'Questrial';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Questrial Regular'), local('Questrial-Regular'), url('fonts/Questrial-Regular.woff2') format('woff2'), url('fonts/Questrial-Regular.woff') format('woff');
+}
+
+
+* { padding: 0; margin: 0; }
+p { margin: 12px 0; }
+
+body { 
+	margin: 0; 
+	padding: 0;
+	background-color: #ffffff; 
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	color: #000000;
+}
+
+
+@viewport {
+    orientation: landscape;
+}
+
+/* CONTENT */
+.ui-page{
+	height: 100%;
+}
+.ui-content{
+	width: 1500px;
+	height: 100%;
+	padding: 0px;
+	text-shadow: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.ui-content p{
+	font-size:16px;
+}
+.ui-content .region-content{
+	margin: 0;
+	font-size: 18px;
+	height: 100%;
+}
+
+
+
+
+/* ---------- ACCUEIL GENERAL ---------- */
+
+
+#page-acc .menu-acc{
+	position: fixed;
+	z-index: 98;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	width: 425px;
+	background-color: #4a4949;
+}
+#page-acc .menu-acc::after{
+	content: '';
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	right: -75px;
+	width: 75px;
+	background-image: url(../imgs/menu/arrondi.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: contain;
+}
+#page-acc .menu-acc ul{
+	margin: 100px 30px 0 20px;
+	list-style: none;
+	text-align: right;
+}
+#page-acc .menu-acc a{
+	display: block;
+	background-image: url(../imgs/menu/picto-1.png);
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+	font-family: 'Questrial', sans-serif;
+	font-size: 24px;
+	color: #ffffff;
+	font-weight: 400;
+	line-height: 28px;
+	text-decoration: none;
+	padding: 0 85px 0 0;
+	margin: 0 0 40px 0;
+	height: 64px;
+}
+#page-acc .menu-acc li.menu-2 a{
+	background-image: url(../imgs/menu/picto-2.png);
+}
+#page-acc .menu-acc li.menu-3 a{
+	background-image: url(../imgs/menu/picto-3.png);
+}
+#page-acc .menu-acc li.menu-4 a{
+	background-image: url(../imgs/menu/picto-4.png);
+}
+#page-acc .menu-acc li.menu-5 a{
+	background-image: url(../imgs/menu/picto-5.png);
+}
+#page-acc .menu-acc li.menu-6 a{
+	background-image: url(../imgs/menu/picto-6.png);
+}
+
+#page-acc .contenu-acc{
+	height: 100%;
+	background-image: url(../imgs/accueil/logo-dielna.png);
+	background-repeat: no-repeat;
+	background-position: 668px 50%;
+}
+
+#page-acc .app-version {
+    bottom: 10px;
+    color: #282828;
+    position: absolute;
+    right: 10px;
+    text-shadow: none;
+}
+
+
+
+
+
+
+
+/* ---------- POPUP ---------- */
+.ui-overlay-f.ui-popup-screen.in{
+	background-color: #282828;
+	opacity: 0.4;
+}
+.ui-popup{
+	width: 860px;
+	border: 1px solid #8a8a8a;
+	border-radius: 4px;
+}
+.ui-popup a.bt-fermer{
+	display: block;
+	width: 46px;
+	height: 47px;
+	background-image: url(../imgs/popup/bt-fermer.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	position: absolute;
+	top: -20px;
+	right: -20px;
+}
+.ui-popup h2{
+	background-image: url(../imgs/popup/bg-titre.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	font-family: 'Lato', sans-serif;
+	font-size: 24px;
+	color: #ffffff;
+	font-weight: 900;
+	line-height: 50px;
+	margin: 24px 0 28px 0;
+	padding: 0 0 0 40px;
+}
+.ui-popup h2.gris{
+	background-image: url(../imgs/popup/bg-titre-gris.png);
+}
+.ui-popup .descriptif{
+	font-family: 'Lato', sans-serif;
+	font-size: 24px;
+	color: #282828;
+	font-weight: 400;
+	line-height: 28px;
+	margin: 0 30px 30px 40px;
+}
+.ui-popup .descriptif .ss-titre{
+	font-weight: 900;
+	margin: 6px 0 0 0;
+}
+.ui-popup .descriptif ul{
+	list-style: none;	
+}
+.ui-popup .descriptif ul li{
+	background-image: url(../imgs/popup/puce-liste.png);
+	background-repeat: no-repeat;
+	background-position: 0px 7px;
+	padding: 0 0 0 20px;
+}
+
+
+
+
+/* ---------- FOOTER ---------- */
+
+.ui-content .pied-page #fil-ariane{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	pointer-events: auto;
+	background-color: #dddddd;
+	border: 1px solid #a7a7a7;
+	border-radius: 0 3px 3px 0;
+	padding: 0 0px 0 0;
+	background-image:-moz-linear-gradient(#ffffff, #dddddd);
+	background-image:-webkit-linear-gradient(#ffffff, #dddddd);
+	background-image:-o-linear-gradient(#ffffff, #dddddd);
+	background-image:linear-gradient(#ffffff, #dddddd);
+	margin: -20px 0 0 100px;
+}
+.ui-content .pied-page #fil-ariane .liens > div{
+	float: left;
+	padding: 0 9px 0 26px;
+	background-image: url(../imgs/footer/menu-separ.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+.ui-content .pied-page #fil-ariane .liens > div.lien-home{
+	background: none;
+	padding: 0 9px 0 44px;
+}
+.ui-content .pied-page #fil-ariane .liens > div.lien-home span{
+	background-image: url(../imgs/footer/menu-sopral.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	display: block;
+	width: 80px;
+	height: 81px;
+	position: absolute;
+	left: -50px;
+	top: -22px;	
+}
+.ui-content .pied-page #fil-ariane .liens a{
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	color: #a8001a;
+	font-weight: 700;
+	text-decoration: none;
+	display: block;
+	height: 38px;
+	line-height: 38px;
+	padding: 0 0 0 0;
+}
+.ui-content .pied-page #fil-ariane .liens .lien-suite a{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+	color: #1b4619;
+	font-weight: 400;
+}
+
+
+	
+
+.clear{
+	clear:both;
+}
+
+
+
+
