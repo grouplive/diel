@@ -3,6 +3,38 @@
 	
 	$(document).ready(function () {
 		
+		/*
+		 * Make sure that the device is scaled so that it is at least minWidth px in width
+		 * in any orientation. This is done by setting the zoom appropriately.
+		 * Right now, we only need this on Android, which supports zoom.
+		 * Plan B is to use transforms with scale and transform-origin.
+		 */
+		function setupScale (minWidth) {
+			var viewWidth = Math.max(document.documentElement.clientWidth, window.innerWidth);
+			var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+			var portWidth = Math.min(viewWidth, viewHeight);
+			var landWidth = Math.max(viewWidth, viewHeight);
+			var fixScale = function () {
+				if (Math.abs(window.orientation) != 90) {
+					// portrait
+					document.body.style.zoom = portWidth / minWidth;
+				} else if (landWidth < minWidth) {
+					// landscape, but < minWidth
+					document.body.style.zoom = landWidth / minWidth;
+				} else {
+					// landscape >= minWidth. Turn off zoom.
+					// This will make things "larger" in landscape.
+					document.body.style.zoom = 1;
+				}
+			};
+			if (gPortWidth >= minWidth) {
+				return;		// device is greater than minWidth even in portrait.
+			}
+			fixScale();								// fix the current scale.		
+			window.onorientationchange = fixScale;	// and when orientation is changed
+		}
+		setupScale(1500);
+		
 	  $(document).on('pagebeforeshow', function(e, data){
 	  	chargementPage();
 	  });
