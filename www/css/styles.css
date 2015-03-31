@@ -19,6 +19,7 @@ body {
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:16px;
 	color: #000000;
+	zoom: 0.5;
 	transform-origin: top left;
 	transform: scale(.5, .5);
 }

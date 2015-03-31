@@ -8,7 +8,7 @@
 		 * Right now, we only need this on Android, which supports zoom.
 		 * Plan B is to use transforms with scale and transform-origin.
 		 */
-		function setupScale (minWidth) {
+		/*function setupScale (minWidth) {
 			var viewWidth = Math.max(document.documentElement.clientWidth, window.innerWidth);
 			var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
 			var portWidth = Math.min(viewWidth, viewHeight);
@@ -34,7 +34,7 @@
 			window.onorientationchange = fixScale;	// and when orientation is changed
 		}
 		//setupScale(1500);
-		alert(window.orientation);
+		alert(window.orientation);*/
 		
 	  $(document).on('pagebeforeshow', function(e, data){
 	  	chargementPage();
