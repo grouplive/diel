@@ -432,7 +432,7 @@ body {
 }
 
 
-@media only screen and (max-device-width : 1280px) {
+@media only screen and (max-device-width : 1499px) {
 	
 	.ui-page{
 		width: 100%;
