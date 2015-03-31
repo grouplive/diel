@@ -21,10 +21,11 @@
     <preference name="show-splash-screen-spinner" value="true" />
     <!--<preference name="auto-hide-splash-screen" value="true" />-->
     <preference name="disable-cursor" value="false" />
-    <preference name="android-minSdkVersion" value="11" />
+    <preference name="android-minSdkVersion" value="7" />
     <preference name="android-installLocation" value="auto" />
 	<preference name="SplashScreen" value="screen" />
 	<preference name="SplashScreenDelay" value="10000" />
+	<preference name="EnableViewportScale"        value="true" />
     <!--<gap:plugin name="org.apache.cordova.camera" />
     <gap:plugin name="org.apache.cordova.file" />
     <gap:plugin name="org.apache.cordova.file-transfer" />
