@@ -117,7 +117,7 @@ body {
 	height: 100%;
 	background-image: url(../imgs/accueil/logo-dielna.png);
 	background-repeat: no-repeat;
-	background-position: 72% 50%;
+	background-position: 75% 50%;
 }
 
 #page-acc .app-version {
@@ -131,7 +131,7 @@ body {
 
 /* ---------- CONTENU ---------- */
 .ui-content .contenu-page{
-	margin-bottom: 120px;
+	padding-bottom: 120px;
 }
 .ui-content .entete{
 	position: fixed;
