@@ -28,7 +28,11 @@ body {
 
 /* CONTENT */
 .ui-page{
+	width: 1500px;
 	height: 100%;
+}
+.ui-mobile [data-role=page]{
+	width: 1500px;
 }
 .ui-content{
 	width: 1500px;
