@@ -131,7 +131,6 @@ body {
 
 /* ---------- CONTENU ---------- */
 .ui-content .contenu-page{
-	padding-bottom: 120px;
 }
 .ui-content .entete{
 	position: fixed;
@@ -203,7 +202,8 @@ body {
 }
 
 .ui-content .contenu-page .marge-contenu{
-	margin: 150px 50px 120px 220px;
+	margin: 150px 50px 0 220px;
+	padding: 0 0 120px 0;
 }
 .ui-content .contenu-page .marge-contenu .titre1{
 	font-family: 'Questrial', sans-serif;
