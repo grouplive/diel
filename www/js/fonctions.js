@@ -2,7 +2,7 @@
 
 	
 	$(document).ready(function () {
-		
+		alert('ok');
 		/*
 		 * Make sure that the device is scaled so that it is at least minWidth px in width
 		 * in any orientation. This is done by setting the zoom appropriately.
@@ -14,6 +14,7 @@
 			var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
 			var portWidth = Math.min(viewWidth, viewHeight);
 			var landWidth = Math.max(viewWidth, viewHeight);
+			alert(viewWidth + '|' + viewHeight + '|' + portWidth + '|' + landWidth);
 			var fixScale = function () {
 				if (Math.abs(window.orientation) != 90) {
 					// portrait
