@@ -2,7 +2,6 @@
 
 	
 	$(document).ready(function () {
-		alert('ok');
 		/*
 		 * Make sure that the device is scaled so that it is at least minWidth px in width
 		 * in any orientation. This is done by setting the zoom appropriately.
@@ -34,7 +33,8 @@
 			fixScale();								// fix the current scale.		
 			window.onorientationchange = fixScale;	// and when orientation is changed
 		}
-		setupScale(1500);
+		//setupScale(1500);
+		alert(window.orientation);
 		
 	  $(document).on('pagebeforeshow', function(e, data){
 	  	chargementPage();
